@@ -1,0 +1,132 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  color: hsl(199, 75%, 59%);
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(199, 75%, 69%);
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Jost", sans-serif;
+}
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-title h2 {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  color: hsl(218, 39%, 38%);
+}
+.section-title h2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ddd;
+}
+.section-title h2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: hsl(199, 75%, 59%);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+#portfolio-filter {
+  list-style: none;
+  margin-bottom: 20px;
+}
+#portfolio-filter li {
+  display: inline-block;
+  margin: 10px 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #444;
+  transition: all 0.3s;
+}
+#portfolio-filter li:hover,
+#portfolio-filter li.filter-active {
+  background: hsl(199, 75%, 59%);
+  color: #fff;
+}
+.portfolio-item {
+  margin-bottom: 10px;
+}
+.portfolio-item .portfolio-img {
+  overflow: hidden;
+}
+.portfolio-item .portfolio-img img {
+  transition: all 0.6s;
+}
+.portfolio-item .portfolio-info {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  background: hsla(219, 39%, 35%, 0.8);
+  transition: all 0.3s;
+  padding: 10px 15px;
+  opacity: 0;
+}
+.portfolio-item .portfolio-info h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 0;
+}
+.portfolio-item .portfolio-info p {
+  color: hsl(199, 75%, 99%);
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.portfolio-item .portfolio-info a {
+  position: absolute;
+  right: 40px;
+  font-size: 28px;
+  font-weight: 400;
+  transition: all 0.3s;
+  top: calc(50% - 18px);
+  color: #fff;
+}
+.portfolio-item .portfolio-info a:hover {
+  color: hsl(199, 75%, 59%);
+}
+.portfolio-item .portfolio-info .detail-link {
+  right: 10px;
+}
+.portfolio-item:hover img {
+  transform: scale(1.15);
+}
+.portfolio-item:hover .portfolio-info {
+  opacity: 1;
+}
