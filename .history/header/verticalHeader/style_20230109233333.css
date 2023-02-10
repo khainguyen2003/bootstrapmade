@@ -1,0 +1,42 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+a{
+    color: hsl(209, );
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------------
+# Header
+---------------------------------------------------------------- */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    transition: all 0.3s;
+    padding: 15px;
+}
+@media (max-width: 991px){
+    #header{
+        width: 300px;
+        background: #fff;
+        border-right: 1px solid hsl(209, 14%, 79%);
+    }
+}

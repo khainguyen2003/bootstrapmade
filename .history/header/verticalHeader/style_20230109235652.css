@@ -1,0 +1,122 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  color: hsl(209, 95%, 38%);
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(209, 95%, 48%);
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/* --------------------------------------------------------------
+# Header
+---------------------------------------------------------------- */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  transition: all 0.3s;
+  padding: 15px;
+  overflow-y: hidden;
+}
+@media (max-width: 991px) {
+  #header {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid hsl(209, 14%, 79%);
+    left: -300px;
+  }
+}
+.nav-menu {
+  padding: 0;
+}
+.nav-menu * {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav-menu > ul > li {
+  white-space: nowrap;
+}
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  height: 56px;
+  width: 100%;
+  margin-bottom: 8px;
+  color: hsl(210, 14%, 31%);
+  background: hsl(220, 14%, 95%);
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 20px;
+}
+
+.nav-menu a span,
+.nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: hsl(210, 14%, 31%);
+}
+@media (min-width: 992px) {
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 56px;
+  }
+
+  .nav-menu a span,
+  .nav-menu a:focus span {
+    display: none;
+    color: #fff;
+  }
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  color: #fff;
+  background: hsl(209, 95%, 38%);
+}
+
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span,
+.nav-menu li:hover > a span {
+  color: #fff;
+}
+
+.nav-menu a:hover,
+.nav-menu li:hover > a {
+  width: 100%;
+  color: #fff;
+}
+
+.nav-menu a:hover span,
+.nav-menu li:hover > a span {
+  display: block;
+}

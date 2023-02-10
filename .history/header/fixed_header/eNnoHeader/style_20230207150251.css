@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444;
+  }
+  
+  a {
+    color: hsl(151, 82%, 43%);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: hsl(219, 96%, 55%);
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  

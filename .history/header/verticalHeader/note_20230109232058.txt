@@ -1,0 +1,1 @@
+- Nếu flex-column thì justify-content-center sẽ là căn giữa theo chiều dọc và align-items-center sẽ là căn giữa theo chiều ngang
